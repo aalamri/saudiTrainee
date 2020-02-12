@@ -1,0 +1,101 @@
+body{
+    text-align: right;
+}
+.progress-circular{
+    padding-right: 30px;
+}
+#bs-example-navbar-collapse-1 {
+    float: left;
+}
+.persional-info .head {
+    float: right;
+}
+.persional-info .info {
+    margin-right: 150px;
+    margin-left: auto;
+}
+.about-area .section-title::after {
+    left: auto;
+    right: -9%;
+}
+.about-intro {
+    border-right: 5px solid #00b22d;
+    padding-right: 85px;
+    border-left: none;
+    padding-left: 0;
+}
+.about-intro::before {
+    left: auto;
+    right: -29px;
+}
+.about-intro::after {
+    right: 15px;
+    left: auto;
+}
+.certificate-collum.right::after {
+    left: auto;
+    right: -37px;
+}
+
+.single-certificate {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.education {
+    margin-right: -20px;
+}
+.single-certificate::after {
+    left: -32px;
+    right: auto;
+}
+.right .single-certificate::after {
+    right: -32px;
+    left: auto;
+}
+.progress-circular > span {
+    left: 0;
+}
+.knob {
+    right: 65px;
+}
+.portfolio-area button.close {
+   right: auto;
+    left: 15px;
+}
+.panel-title a::after {
+    left: 40px;
+    right: auto;
+}
+.owl-carousel .owl-wrapper{
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    float: left;
+}
+.owl-carousel .owl-item{
+    float: left;
+}
+
+.post-meta span:first-child {
+    margin-left: 10px;
+}
+.post-meta span i {
+    margin-left: 5px;
+}
+
+.review-area .section-title:after {
+    color: #fff;
+    right: -5%;
+    left: auto;
+}
+.qoute-thumb {
+    float: left;
+}
+.review-area .owl-theme .owl-controls {
+    right: -7%;
+    left: auto;
+}
+.qoute-details:after{
+    left: auto;
+    right: 0;
+}
