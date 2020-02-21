@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index-rtl');
-});
+
+Route::get('/', 'FrontController@getIndex'); 
+// {
+//     return view('index-rtl');
+// });
+
+Route::get("/registeration-form", "ApiTrainersController@index"); //for controller or submit page

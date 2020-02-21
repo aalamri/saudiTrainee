@@ -188,223 +188,85 @@
 <!-- ABOUT AREA END HERE -->
 
 <!-- RESUME AREA END HERE -->
-<section class="resume-area section-padding" id="education">
+<section class="blog-area section-padding" id="blog">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-intro">
-                    <h2 class="section-title">سيرتي الذاتية</h2>
+                    <h2 class="section-title">المدربين</h2>
                 </div>
             </div>
         </div>
         <div class="row">
-            <!-- EDUCATION START HERE -->
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="education">
-                    <h3><span><i class="fa fa-book"></i></span>التعليم</h3>
-                    <ul class="certificate-collum">
-                        <li class="single-certificate ">
-                            <h4 class="certificat-heading">ماجستير في تطوير الويب
-                                <small>جامعة الخليج العربي</small>
-                            </h4>
-                            <p>النتيجة: A + </p>
-                            <span class="duration">يناير 2012 - أغسطس 2014</span>
-                        </li>
-                        <li class="single-certificate">
-                            <h4 class="certificat-heading">ماجستير في تطوير الويب
-                                <small>جامعة الخليج العربي</small>
-                            </h4>
-                            <p>النتيجة: A + </p>
-                            <span class="duration">يناير 2012 - أغسطس 2014</span>
-                        </li>
-                        <li class="single-certificate">
-                            <h4 class="certificat-heading">ماجستير في تطوير الويب
-                                <small>جامعة الخليج العربي</small>
-                            </h4>
-                            <p>النتيجة: A + </p>
-                            <span class="duration">يناير 2012 - أغسطس 2014</span>
-                        </li>
-                    </ul>
+            <div class="blog-grid">
+                <div class="col-md-4 blog-item col-sm-4 col-xs-12">
+                    <article class="single-article">
+                        <div class="blog-thumb">
+                            <img src="images/blog1.jpg" alt="Image">
+                        </div>
+                        <div class="blog-details">
+                        @foreach($trainers as $trainer)
+                            <div class="blog-txt">
+                                <h4><a href="single-post.html">{{$trainer->nameAr}}</a></h4>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
+                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
+                                </div>
+                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
+                                <a href="single-post.html" class="custom-btn">قراءة المزيد</a>
+                            </div>
+                        @endforeach    
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <!-- EXPERIENCE START HERE -->
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="experience">
-                    <h3><span><i class="fa fa-briefcase"></i></span>تجربة</h3>
-                    <ul class="certificate-collum right">
-                        <li class="single-certificate">
-                            <h4 class="certificat-heading">شركة أي بي سي للبرمجيات
-                                <small>بلاتون جديد ، رياض</small>
-                            </h4>
-                            <p>المطور الأمامي</p>
-                            <span class="duration"> يناير 2012 - أغسطس 2014</span>
-                        </li>
-                        <li class="single-certificate">
-                            <h4 class="certificat-heading">شركة أي بي سي للبرمجيات
-                                <small>بلاتون جديد ، رياض</small>
-                            </h4>
-                            <p>مطور ويب</p>
-                            <span class="duration">يناير 2012 - أغسطس 2014</span>
-                        </li>
-                        <li class="single-certificate">
-                            <h4 class="certificat-heading">شركة أي بي سي للبرمجيات
-                                <small>بلاتون جديد ، رياض</small>
-                            </h4>
-                            <p>مطور ويب</p>
-                            <span class="duration">يناير 2012 - أغسطس 2014</span>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Blog Items End Here -->
+                <!-- <div class="col-md-4 blog-item col-sm-4 col-xs-12">
+                    <article class="single-article">
+                        <div class="blog-thumb carousel-blog">
+                            <img src="images/blog2.jpg" alt="Image">
+                            <img src="images/blog1.jpg" alt="Image">
+                            <img src="images/blog3.jpg" alt="Image">
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-txt">
+                                <h4><a href="single-post.html">يذهب عنوان النص هنا</a></h4>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
+                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
+                                </div>
+                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
+                                <a href="single-post.html" class="custom-btn">قراءة المزيد</a>
+                            </div>
+                        </div>
+                    </article>
+                </div> -->
+                <!-- <div class="col-md-4 blog-item col-sm-4 col-xs-12">
+                    <article class="single-article">
+                        <div class="blog-thumb">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S5RDXlRXh8c" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-txt">
+                                <h4><a href="single-post.html">يذهب عنوان النص هنا</a></h4>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
+                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
+                                </div>
+                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
+                                <a href="single-post.html" class="custom-btn">قراءة المزيد</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Blog Items End Here -->
+                </div> -->
             </div>
         </div>
     </div>
 </section>
-<!-- RESUME AREA END HERE -->
 
-<!-- SKILL AREA END HERE -->
-<section class="skill-area section-padding" id="skill">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-intro">
-                    <h2 class="section-title">استمارة التسجيل</h2>
-                </div>
-                <!-- skill circle section start -->
-                <div class="contact-form">
-                    <div class="form-group">
-                        <label class="field-label">الاسم</label>
-                        <input class="field-input" type="text" id="firstname" name="name">
-                    </div>
-                    <div class="form-group">
-                        <label class="field-label">الدرجة العلمية</label>
-                        <input class="field-input" type="text" id="dgree" name="dgree">
-                    </div>
-                    <div class="form-group">
-                        <label class="field-label">البريد الإلكتروني</label>
-                        <input class="field-input" type="text" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label class="field-label">رقم الهاتف</label>
-                        <input class="field-input" type="text" id="phone" name="phone">
-                    </div>
-                    <button type="submit">ارسال</button>
-                </div>
-                <div class="skill-wrap">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="progress-circular" data-wow-duration="1s">
-                            <input type="text" class="knob skill-bg" value="0" data-rel="95" data-linecap="square"
-                                   data-width="180" data-bgcolor="#ffffff" data-fgcolor="#00b22d " data-thickness=".10"
-                                   data-readonly="true">
-                            <span>التصميم الجرافيكي</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="progress-circular" data-wow-duration="1.2s">
-                            <input type="text" class="knob" value="0" data-rel="85" data-linecap="square"
-                                   data-width="180" data-bgcolor="#ffffff" data-fgcolor="#00b22d" data-thickness=".10"
-                                   data-readonly="true" disabled>
-                            <span>تصميم الويب</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="progress-circular" data-wow-duration="1s">
-                            <input type="text" class="knob" value="0" data-rel="90" data-linecap="square"
-                                   data-width="180" data-bgcolor="#ffffff" data-fgcolor="#00b22d" data-thickness=".10"
-                                   data-readonly="true" disabled>
-                            <span>وورد</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="progress-circular" data-wow-duration="1.2s">
-                            <input type="text" class="knob" value="0" data-rel="85" data-linecap="square"
-                                   data-width="180" data-bgcolor="#ffffff" data-fgcolor="#00b22d" data-thickness=".10"
-                                   data-readonly="true" disabled>
-                            <span>جملة</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- skill circle section end -->
-            </div>
-        </div>
-    </div>
-</section>
 <!-- SKILL AREA END HERE -->
 
 <!-- SERVICE AREA START HERE -->
-<section class="service-area" id="service">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-intro">
-                    <h2 class="section-title">خدمتي</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <!-- Single Service Start -->
-            <div class="col-md-4 col-sm-6">
-                <div class="single-service">
-                    <span><i class="fa fa-paint-brush"></i></span>
-                    <div class="single-desc">
-                        <h3>التصميم الجرافيكي</h3>
-                        <p>يتم ترميز السيرة الذاتية مع الحب ورمز بسيط مقروء. من هم خدعوا جدا و انحطمت معنوياتهم &nbsp;&nbsp;من خلال العمل الجاد؟</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Service Start -->
-            <div class="col-md-4 col-sm-6">
-                <div class="single-service">
-                    <span><i class="fa fa-code"></i></span>
-                    <div class="single-desc">
-                        <h3>تصميم الويب</h3>
-                        <p>يتم ترميز السيرة الذاتية مع الحب ورمز بسيط مقروء. من هم خدعوا جدا و انحطمت معنوياتهم &nbsp;&nbsp;من خلال العمل الجاد؟</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Service Start -->
-            <div class="col-md-4 col-sm-6">
-                <div class="single-service">
-                    <span><i class="fa fa-wordpress"></i></span>
-                    <div class="single-desc">
-                        <h3>تطوير الشبكة</h3>
-                        <p>يتم ترميز السيرة الذاتية مع الحب ورمز بسيط مقروء. من هم خدعوا جدا و انحطمت معنوياتهم &nbsp;&nbsp;من خلال العمل الجاد؟</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Service Start -->
-            <div class="col-md-4 col-sm-6">
-                <div class="single-service">
-                    <span><i class="fa fa-pencil-square-o"></i></span>
-                    <div class="single-desc">
-                        <h3>كتابة المحتوى</h3>
-                        <p>يتم ترميز السيرة الذاتية مع الحب ورمز بسيط مقروء. من هم خدعوا جدا و انحطمت معنوياتهم &nbsp;&nbsp;من خلال العمل الجاد؟</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Service Start -->
-            <div class="col-md-4 col-sm-6">
-                <div class="single-service">
-                    <span><i class="fa fa-leaf"></i></span>
-                    <div class="single-desc">
-                        <h3>شركائنا</h3>
-                        <p>يتم ترميز السيرة الذاتية مع الحب ورمز بسيط مقروء. من هم خدعوا جدا و انحطمت معنوياتهم   من خلال العمل الجاد؟</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Single Service Start -->
-            <div class="col-md-4 col-sm-6">
-                <div class="single-service">
-                    <span><i class="fa fa-user-plus"></i></span>
-                    <div class="single-desc">
-                        <h3>التسويق التابعة لها</h3>
-                        <p>يتم ترميز السيرة الذاتية مع الحب ورمز بسيط مقروء. من هم خدعوا جدا و انحطمت معنوياتهم &nbsp;&nbsp;من خلال العمل الجاد؟</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- SERVICE AREA END HERE -->
 
 <!-- PORTFOLIO AREA START HERE -->
 <section class="portfolio-area section-padding" id="portfolio">
@@ -735,249 +597,6 @@
 <!-- PORTFOLIO AREA END HERE -->
 
 <!-- CHOOSE AREA START HERE -->
-<section class="process-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-intro">
-                    <h2 class="section-title">عملي</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-6">
-                <div class="choose-vedio">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VsbE9Fojw0s" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <div class="accordion-wrap">
-                    <!-- PANEL GROUP START HERE -->
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                        <!-- SINGLE PANEL START -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingOne">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                       aria-expanded="true" aria-controls="collapseOne">
-                                        مجال البحث
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                                 aria-labelledby="headingOne">
-                                <div class="panel-body">
-                                    قالب الصفحة المقصودة متعددة الأغراض نظيفة وأنيقة. سيكون مناسبًا  أو   أو أي نوع من خدمات الويب. لديها 4 أنماط الخلفية مع أنماط الصفحة الرئيوع من خدمات الويب. لديها 4 أنماط الخلفية مع أنماط الصفحة ال
-                                </div>
-                            </div>
-                        </div>
-                        <!-- SINGLE PANEL START -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingTwo">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        جمع المفهوم
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingTwo">
-                                <div class="panel-body">
-                                    قالب الصفحة المقصودة متعددة الأغراض نظيفة وأنيقة. سيكون مناسبًا  أو   أو أي نوع من خدمات الويب. لديها 4 أنماط الخلفية مع أنماط الصفحة الرئيوع من خدمات الويب. لديها 4 أنماط الخلفية مع أنماط الصفحة ال
-                                </div>
-                            </div>
-                        </div>
-                        <!-- SINGLE PANEL START -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingThree">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        تطوير الفكرة
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingThree">
-                                <div class="panel-body">
-                                    قالب الصفحة المقصودة متعددة الأغراض نظيفة وأنيقة. سيكون مناسبًا  أو   أو أي نوع من خدمات الويب. لديها 4 أنماط الخلفية مع أنماط الصفحة الرئيوع من خدمات الويب. لديها 4 أنماط الخلفية مع أنماط الصفحة ال
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SINGLE PANEL START -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="headingfour">
-                                <h4 class="panel-title">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                       href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                        الاختبار النهائي
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel"
-                                 aria-labelledby="headingfour">
-                                <div class="panel-body">
-                                    قالب الصفحة المقصودة متعددة الأغراض نظيفة وأنيقة. سيكون مناسبًا  أو   أو أي نوع من خدمات الويب. لديها 4 أنماط الخلفية مع أنماط الصفحة الرئيوع من خدمات الويب. لديها 4 أنماط الخلفية مع أنماط الصفحة ال
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PANEL GROUP END HERE -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- CHOOSE AREA END HERE -->
-
-<!-- FUN AREA START HERE -->
-<div class="fun-area parallax-bg" style="background-image:url(images/fun.jpg)">
-    <div class="single-fun light-bg">
-        <i class="fa fa-users"></i>
-        <span class="counter">12,23</span>
-        <p>عملاء سعداء</p>
-    </div>
-    <div class="single-fun">
-        <i class="fa fa-star"></i>
-        <span class="counter">450</span>
-        <p>أعلى معدل</p>
-    </div>
-    <div class="single-fun light-bg">
-        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-        <span class="counter">56700</span>
-        <p>الإعجابات</p>
-    </div>
-    <div class="single-fun">
-        <i class="fa fa-diamond"></i>
-        <span class="counter">120</span>
-        <p>جائزة</p>
-    </div>
-</div>
-<!-- FUN AREA END HERE -->
-
-<!-- BLOG AREA START HERE -->
-<section class="blog-area section-padding" id="blog">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-intro">
-                    <h2 class="section-title">مدونتي</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="blog-grid">
-                <div class="col-md-4 blog-item col-sm-4 col-xs-12">
-                    <article class="single-article">
-                        <div class="blog-thumb">
-                            <img src="images/blog1.jpg" alt="Image">
-                        </div>
-                        <div class="blog-details">
-                            <div class="blog-txt">
-                                <h4><a href="single-post.html">يذهب عنوان النص هنا</a></h4>
-                                <div class="post-meta">
-                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
-                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
-                                </div>
-                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
-                                <a href="single-post.html" class="custom-btn">قراءة المزيد</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <!-- Blog Items End Here -->
-                <div class="col-md-4 blog-item col-sm-4 col-xs-12">
-                    <article class="single-article">
-                        <div class="blog-thumb carousel-blog">
-                            <img src="images/blog2.jpg" alt="Image">
-                            <img src="images/blog1.jpg" alt="Image">
-                            <img src="images/blog3.jpg" alt="Image">
-                        </div>
-                        <div class="blog-details">
-                            <div class="blog-txt">
-                                <h4><a href="single-post.html">يذهب عنوان النص هنا</a></h4>
-                                <div class="post-meta">
-                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
-                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
-                                </div>
-                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
-                                <a href="single-post.html" class="custom-btn">قراءة المزيد</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-4 blog-item col-sm-4 col-xs-12">
-                    <article class="single-article">
-                        <div class="blog-thumb">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S5RDXlRXh8c" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="blog-details">
-                            <div class="blog-txt">
-                                <h4><a href="single-post.html">يذهب عنوان النص هنا</a></h4>
-                                <div class="post-meta">
-                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
-                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
-                                </div>
-                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
-                                <a href="single-post.html" class="custom-btn">قراءة المزيد</a>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Blog Items End Here -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- BLOG AREA END HERE -->
-
-<!-- REVIEW AREA END HERE -->
-<section class="review-area parallax-bg" style="background-image: url(images/review.jpg)" id="clients">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="review-wrap">
-                    <!-- Single Review Start -->
-                    <div class="single-quote">
-                        <div class="qoute-thumb">
-                            <img src="images/m2.jpeg" alt="Image">
-                        </div>
-                        <div class="qoute-details">
-                            <h2 class="section-title">ما يقوله العميل</h2>
-                            <p>يمكن العقول المبدعة خلق الإبداع. لقاء المتعة، بل واحتياجات العمل من الحزن، الملذات ويجعلها صد، بعيدا مع اتهام أنفسنا، من الخطأ أبدا؟ الحزن، فهي أسوأ!</p>
-                            <h5>جون ابراهام / الرئيس التنفيذي ، في الشركة</h5>
-                        </div>
-                    </div>
-                    <!-- Single Review Start -->
-                    <div class="single-quote">
-                        <div class="qoute-thumb">
-                            <img src="images/rev3.jpg" alt="Image">
-                        </div>
-                        <div class="qoute-details">
-                            <h2 class="section-title">ما يقوله العميل</h2>
-                            <p>يمكن العقول المبدعة خلق الإبداع. لقاء المتعة، بل واحتياجات العمل من الحزن، الملذات ويجعلها صد، بعيدا مع اتهام أنفسنا، من الخطأ أبدا؟ الحزن، فهي أسوأ!</p>
-                            <h5>جون ابراهام / الرئيس التنفيذي ، في الشركة</h5>
-                        </div>
-                    </div>
-                    <!-- Single Review Start -->
-                    <div class="single-quote">
-                        <div class="qoute-thumb">
-                            <img src="images/rev2.jpg" alt="Image">
-                        </div>
-                        <div class="qoute-details">
-                            <h2 class="section-title">ما يقوله العميل</h2>
-                            <p>يمكن العقول المبدعة خلق الإبداع. لقاء المتعة، بل واحتياجات العمل من الحزن، الملذات ويجعلها صد، بعيدا مع اتهام أنفسنا، من الخطأ أبدا؟ الحزن، فهي أسوأ!</p>
-                            <h5>جون ابراهام/ الرئيس التنفيذي ، في الشركة</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- REVIEW AREA END HERE -->
 
 <!-- BRAND AREA END HERE -->
 <div id="brand" class="brand-area section-padding">
