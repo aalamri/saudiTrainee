@@ -37,7 +37,6 @@
 			$this->col[] = ["label"=>"Twitter","name"=>"twitter"];
 			$this->col[] = ["label"=>"LinkedIn","name"=>"linkedIn"];
 			$this->col[] = ["label"=>"Facebook","name"=>"facebook"];
-			$this->col[] = ["label"=>"Image","name"=>"image"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
