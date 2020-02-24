@@ -5,7 +5,7 @@
     ==================================================-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Rx Responsive Resume Template</title>
+    <title>app title @yield('title')</title>
     <!-- Favicon Icon
     ==================================================-->
     <link rel="shortcut icon" href="images/favicon.ico">

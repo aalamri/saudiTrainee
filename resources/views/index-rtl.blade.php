@@ -27,7 +27,55 @@
     </div>
 </div>
 <!-- HERO AREA END HERE -->
-
+<div class="container">
+     <form action="/search" method="get">
+    {{ csrf_field() }}
+    <div class="form-group">
+        <input type="search" class="form-control" name="search"
+            placeholder="Search trainers"> <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search">Search</span>
+            </button>
+        </span>
+    </div>
+</form>
+<!-- RESUME AREA END HERE -->
+<section class="blog-area section-padding" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-intro">
+                    <h2 class="section-title">المدربين</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="blog-grid">
+            @foreach($trainers as $trainer)
+                <div class="col-md-4 blog-item col-sm-4 col-xs-12">
+                    <article class="single-article">
+                        <div class="blog-thumb">
+                            <img src="images/blog1.jpg" alt="Image">
+                        </div>
+                        <div class="blog-details">
+                            <div class="blog-txt">
+                                <h4><a href="single-post.html">{{$trainer->nameAr}}</a></h4>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
+                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
+                                </div>
+                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
+                                <a href="{{ url('trainer-details/'.$trainer->id) }}" class="custom-btn">قراءة المزيد</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                @endforeach    
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- ABOUT AREA START HERE -->
 <section class="about-area section-padding">
@@ -82,82 +130,7 @@
 </section>
 <!-- ABOUT AREA END HERE -->
 
-<!-- RESUME AREA END HERE -->
-<section class="blog-area section-padding" id="blog">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-intro">
-                    <h2 class="section-title">المدربين</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="blog-grid">
-                <div class="col-md-4 blog-item col-sm-4 col-xs-12">
-                    <article class="single-article">
-                        <div class="blog-thumb">
-                            <img src="images/blog1.jpg" alt="Image">
-                        </div>
-                        <div class="blog-details">
-                        @foreach($trainers as $trainer)
-                            <div class="blog-txt">
-                                <h4><a href="single-post.html">{{$trainer->nameAr}}</a></h4>
-                                <div class="post-meta">
-                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
-                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
-                                </div>
-                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
-                                <a href="single-post.html" class="custom-btn">قراءة المزيد</a>
-                            </div>
-                        @endforeach    
-                        </div>
-                    </article>
-                </div>
-                <!-- Blog Items End Here -->
-                <!-- <div class="col-md-4 blog-item col-sm-4 col-xs-12">
-                    <article class="single-article">
-                        <div class="blog-thumb carousel-blog">
-                            <img src="images/blog2.jpg" alt="Image">
-                            <img src="images/blog1.jpg" alt="Image">
-                            <img src="images/blog3.jpg" alt="Image">
-                        </div>
-                        <div class="blog-details">
-                            <div class="blog-txt">
-                                <h4><a href="single-post.html">يذهب عنوان النص هنا</a></h4>
-                                <div class="post-meta">
-                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
-                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
-                                </div>
-                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
-                                <a href="single-post.html" class="custom-btn">قراءة المزيد</a>
-                            </div>
-                        </div>
-                    </article>
-                </div> -->
-                <!-- <div class="col-md-4 blog-item col-sm-4 col-xs-12">
-                    <article class="single-article">
-                        <div class="blog-thumb">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S5RDXlRXh8c" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="blog-details">
-                            <div class="blog-txt">
-                                <h4><a href="single-post.html">يذهب عنوان النص هنا</a></h4>
-                                <div class="post-meta">
-                                    <span><i class="fa fa-user"></i>نشر بواسطة: <a href="single-post.html">مشرف</a></span>
-                                    <span><i class="fa fa-calendar"></i>تاريخ: 16 Dec 2017</span>
-                                </div>
-                                <p>خلافا للاعتقاد الشائع ، لوريم إيبسوم ليس مجرد نص عشوائي. لها جذور في قطعة من الأدب اللاتيني الكلاسيكي.</p>
-                                <a href="single-post.html" class="custom-btn">قراءة المزيد</a>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Blog Items End Here -->
-                </div> -->
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- SKILL AREA END HERE -->
 
