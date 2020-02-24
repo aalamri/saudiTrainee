@@ -104,6 +104,15 @@
     </div>
     <div class="main">
         @yield('main')
+        <!-- @foreach($trainers as $trainer)
+<h3>الأسم</h3>
+<p>{{$trainer->nameAr}}</p>
+<h3>name</h3>
+<p>{{$trainer->nameEn}}</p>
+<h3>رقم الجوال</h3>
+<p>{{$trainer->phone}}</p>
+<p>{{$trainer->email}}</p>
+@endforeach  -->
         <div class="container emp-profile">
             <form method="post">
                 <div class="row">
@@ -118,12 +127,12 @@
                     </div>
                     <div class="col-md-6">
                         <div class="profile-head">
-                            <h5>
+                            <h2>
                                 {{$trainer->nameAr}}
-                            </h5>
-                            <h6>
+                            </h2>
+                            <h3>
                                 {{$trainer->trainingArea}}
-                            </h6>
+                            </h3>
                             <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
@@ -197,6 +206,16 @@
 
                     </div>
                 </div>
+                <div class="about-social">
+                        <ul>
+                            <li><a href="{{$trainer->facebook}}" class="fb"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="{{$trainer->twitter}}" class="tw"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="{{$trainer->linkedIn}}" class="ln"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 </div>
             </form>
