@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddTableTrainers extends Migration
+class CreateTrainers extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddTableTrainers extends Migration
     public function up()
     {
         Schema::create('trainers', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigincrements('id');
             $table->string('nameAr',255);
             $table->string('nameEn',255);
             $table->string('phone',50);
@@ -27,6 +27,8 @@ class AddTableTrainers extends Migration
             $table->string('trainingArea');
             $table->string('certificate')->nullable();
             $table->longText('experience')->nullable();
+            $table->string('image')->nullable();
+            $table->integer("user_id")->unsigned();
             $table->timestamps();
 
         });

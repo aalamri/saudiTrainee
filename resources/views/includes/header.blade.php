@@ -30,17 +30,15 @@
                                 <ul class="nav navbar-nav">
                                     <li class="activesmooth-menu"><a href="#home">الرئيسية <span class="sr-only">(current)</span></a>
                                     </li>
-                                    <li class="smooth-menu"><a href="#education">من نحن</a>
+                                    <li class="smooth-menu"><a href="#education">المدربين</a>
+                                    </li>
+                                    <li class="smooth-menu"><a href="#portfolio">من نحن</a>
                                     </li>
                                     <li class="smooth-menu"><a href="#skill">التسجيل</a>
                                     </li>
-                                    <li class="smooth-menu"><a href="#brand">شركائنا</a>
+                                    <li class="smooth-menu"><a href="admin">تسجيل الدخول</a>
                                     </li>
-                                    <li class="smooth-menu"><a href="#portfolio">المدربين</a>
-                                    </li>
-                                    <!-- <li class="smooth-menu"><a href="#blog">مدونة</a> -->
-                                    <!-- </li> -->
-                                    <li class="smooth-menu"><a href="#contact">اتصل</a>
+                                    <li class="smooth-menu"><a href="#contact">اتصل بنا</a>
                                     </li>
                                 </ul>
                             </div>
