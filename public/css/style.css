@@ -34,7 +34,6 @@ CSS INDEX
 /*========================================
 1. THEME CSS
 ========================================== */
-
 .alignleft {
     float: left;
     margin-right: 15px;
@@ -67,9 +66,9 @@ img {
 
 body {
     color: #8e8e8e;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 24px;
     -webkit-font-smoothing: antialiased;
     background: #fff;
@@ -83,7 +82,7 @@ h5,
 h6 {
     margin: 0 0 15px;
     color: #2b2b2b;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
     font-weight: 500;
 }
 
@@ -178,7 +177,7 @@ textarea:focus {
     color: #fff;
     display: inline-block;
     font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
     padding: 12px 30px;
     position: relative;
     text-transform: capitalize;
@@ -439,7 +438,7 @@ header.header-area::after {
     color: #fff;
     font-weight: 700;
     padding: 25px 18px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
     position: relative;
     font-size: 18px;
     text-transform: capitalize;
@@ -582,9 +581,9 @@ header.header-area::after {
 .banner-txt > p {
     color: #fff;
     font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
-    letter-spacing: 8px;
+    font-family: 'Droid Arabic Kufi' , serif;
+    font-size: 50px;
+    letter-spacing: 0px;
     margin-bottom: 20px;
     text-transform: uppercase;
 }
@@ -595,7 +594,7 @@ header.header-area::after {
 }
 .element {
     color: #fff;
-    font-size: 60px;
+    font-size: 30px;
     height: 100px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -810,7 +809,7 @@ HOME SLIDER
 .persional-info > ul > li {
     margin-bottom: 15px;
     font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
     font-weight: 700;
 }
 
@@ -1022,7 +1021,7 @@ HOME SLIDER
     font-weight: 300;
     font-size: 14px;
     margin-top: 8px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
 }
 
 .single-certificate > p {
@@ -1082,7 +1081,7 @@ HOME SLIDER
     background: #00b22d none repeat scroll 0 0;
     color: #fff;
     font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
     font-size: 22px;
     height: 21%;
     left: 50%;
@@ -1547,7 +1546,7 @@ HOME SLIDER
     color: #fff;
     font-weight: 500;
     font-size: 50px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
 }
 
 .single-fun > p {
@@ -1699,7 +1698,7 @@ HOME SLIDER
     color: #fff;
     font-size: 16px;
     margin-top: 30px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
 }
 
 .qoute-details:after {
@@ -1827,7 +1826,7 @@ HOME SLIDER
     color: #fff;
     letter-spacing: 3px;
     font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
     padding: 11px;
     text-transform: uppercase;
     width: 100%;
@@ -1858,7 +1857,8 @@ HOME SLIDER
     padding-top: 40px;
     padding-bottom: 15px;
     font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Droid Arabic Kufi' , serif;
+
 }
 
 .copy-right p {

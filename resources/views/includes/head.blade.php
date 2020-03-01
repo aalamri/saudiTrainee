@@ -1,19 +1,21 @@
-    <meta charset="utf-8">
+  <head> 
+   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- responsive viewport
     ==================================================-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>app title @yield('title')</title>
+    <title>المدربين السعوديين</title>
     <!-- Favicon Icon
     ==================================================-->
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- Google Fonts
     ==================================================-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Ubuntu:500,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Ubuntu:500,700" rel="stylesheet"> -->
 
+    <link href=" http://fonts.googleapis.com/earlyaccess/droidarabickufi.css">
 
     <!-- bootstrap css
     ==================================================================-->
@@ -50,3 +52,13 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- <div id="rx-resume-preloader-container">
+    <div class="rx-resume-preloader">
+        <span class="bubble-01"></span>
+        <span class="bubble-02"></span>
+        <span class="bubble-03"></span>
+    </div>
+</div> -->
+<!-- END SITE PRELOADER -->
+  </head>
+<!-- HEADER AREA START HERE -->

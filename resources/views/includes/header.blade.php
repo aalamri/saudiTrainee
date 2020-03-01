@@ -1,4 +1,4 @@
-<div id="rx-resume-preloader-container">
+<!-- <div id="rx-resume-preloader-container">
     <div class="rx-resume-preloader">
         <span class="bubble-01"></span>
         <span class="bubble-02"></span>
@@ -8,7 +8,6 @@
 <!-- END SITE PRELOADER -->
 
 <!-- HEADER AREA START HERE -->
-<div id="home"></div>
 <header class="header-area">
     <div class="container">
         <div class="row">
@@ -28,15 +27,15 @@
                             </div>
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li class="activesmooth-menu"><a href="#home">الرئيسية <span class="sr-only">(current)</span></a>
+                                    <li class="activesmooth-menu"><a href="/">الرئيسية <span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="smooth-menu"><a href="#education">المدربين</a>
                                     </li>
+                                    <li class="smooth-menu"><a href="/registeration-form">التسجيل</a>
+                                    </li>
+                                    <li class="smooth-menu"><a href="/admin">تسجيل الدخول</a>
+                                    </li>
                                     <li class="smooth-menu"><a href="#portfolio">من نحن</a>
-                                    </li>
-                                    <li class="smooth-menu"><a href="#skill">التسجيل</a>
-                                    </li>
-                                    <li class="smooth-menu"><a href="admin">تسجيل الدخول</a>
                                     </li>
                                     <li class="smooth-menu"><a href="#contact">اتصل بنا</a>
                                     </li>
