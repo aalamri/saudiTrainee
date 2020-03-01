@@ -1,8 +1,6 @@
 
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
 @include('includes.head')
 
 
