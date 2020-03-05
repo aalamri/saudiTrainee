@@ -11,13 +11,12 @@
 
 <h1>التسجيل</h1>
 <div class="container emp-profile">
-
-<form action="/registeration-form" method="get">
+<form method="POST" enctype="multipart/form-data"  action="registeration-form">
 @csrf
     <div class="contact-form">
         <div class="form-group">
             <label class="field-label">الاسم</label>
-            <input class="field-input" type="text" id="firstname" name="nameAr">
+            <input class="field-input" type="text" id="nameAr" name="nameAr">
         </div>
         <div class="form-group">
             <label class="field-label">رقم الهاتف</label>

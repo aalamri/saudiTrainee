@@ -17,8 +17,9 @@ Route::get('/', 'FrontController@getIndex');
 //     return view('index-rtl');
 // });
 Route::get( '/search','FrontController@search');
+Route::view('registeration-form','registeration-form');
 
-Route::get("/registeration-form", "ApiTrainersController@index"); //for controller or submit page
+Route::post('registeration-form','FrontController@create');
 
 Route::get("trainer-details/{id}", "FrontController@getTrainerDetails"); //for controller or submit page
 

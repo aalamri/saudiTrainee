@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Validator;
+use App\Trainer;
+
 
 class FrontController extends Controller
 {
@@ -24,5 +28,30 @@ class FrontController extends Controller
         $search =  $request->get('search');
         $data['trainers'] = DB::table('trainers')->where('nameAr', 'like', '%'.$search. '%')->paginate(5);
         return view('index-rtl',['trainers' => $data]);
+    }
+
+    public function create(Request $request)
+    {
+        // $input = $request->all();
+        // $validator = Validator::make($input, [
+        //     'nameAr' => 'required',
+        //     'phone' => 'required',
+        //     'email' => 'required',
+
+        // ]);
+
+        // if ($validator->fails()) {
+        //     # code...
+        //     return $this->sendError('error validation', $validator->errors());
+        // }
+        $trainer = new Trainer();
+        $trainer->nameAr = Input::get("nameAr");
+        $trainer->phone    = Input::get("phone");
+        $trainer->email  = Input::get("email");
+        $trainer->save();
+  
+        // $trainer = Trainer::create($input);
+        return redirect()->back();
+
     }
 }
