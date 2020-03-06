@@ -16,7 +16,7 @@
     ==================================================-->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Ubuntu:500,700" rel="stylesheet"> -->
 
-    <link href="https://fonts.googleapis.com/earlyaccess/droidarabickufi.css">
+    <link href="http://fonts.googleapis.com/earlyaccess/droidarabickufi.css">
 
     <!-- bootstrap css
     ==================================================================-->
