@@ -13,7 +13,7 @@ class FrontController extends Controller
 {
     //
     public function getIndex() {
-        $data['trainers'] = DB::table('trainers')->orderby('id','desc')->take(6)->get();
+        $data['trainers'] = DB::table('trainers')->where('isActive', 1)->orderby('id','desc')->take(6)->get();
         return view('index-rtl', $data);
     }
 
