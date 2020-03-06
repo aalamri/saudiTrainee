@@ -47,17 +47,17 @@ use App\Trainer;
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
 			$this->form[] = ['label'=>'NameAr','name'=>'nameAr','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'NameEn','name'=>'nameEn','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'NameEn','name'=>'nameEn','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Phone','name'=>'phone','type'=>'number','validation'=>'required|numeric','width'=>'col-sm-10','placeholder'=>'You can only enter the number only'];
 			$this->form[] = ['label'=>'Email','name'=>'email','type'=>'email','validation'=>'required|min:1|max:255|email|unique:trainers','width'=>'col-sm-10','placeholder'=>'Please enter a valid email address'];
-			$this->form[] = ['label'=>'Twitter','name'=>'twitter','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'LinkedIn','name'=>'linkedIn','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Facebook','name'=>'facebook','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'City','name'=>'city','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Degree','name'=>'degree','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'TrainingArea','name'=>'trainingArea','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Certificate','name'=>'certificate','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Experience','name'=>'experience','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Twitter','name'=>'twitter','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'LinkedIn','name'=>'linkedIn','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Facebook','name'=>'facebook','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'City','name'=>'city','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Degree','name'=>'degree','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'TrainingArea','name'=>'trainingArea','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Certificate','name'=>'certificate','type'=>'text','validation'=>'max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Experience','name'=>'experience','type'=>'textarea','validation'=>'min:5|max:5000','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Image','name'=>'image','type'=>'upload','validation'=>'required|image|max:3000','width'=>'col-sm-10','help'=>'File types support : JPG, JPEG, PNG, GIF, BMP'];
 			if (\crocodicstudio\crudbooster\helpers\CRUDBooster::me()->id_cms_privileges == \App\User::ADMIN_PRIVILAGE_ID) {
 
