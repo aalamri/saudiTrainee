@@ -51,7 +51,7 @@ class FrontController extends Controller
         $trainer->save();
   
         // $trainer = Trainer::create($input);
-        return redirect()->back();
+        return redirect()->back()->with('تم إرسال طلبك بنجاح!');
 
     }
 }
